@@ -8,10 +8,10 @@ const abc = () =>{
     var user = result.user;
     console.log('user===>',user)
 
+   console.log('user===>',user.displayName)
   })
   .catch((error) => {
     
-   console.log('user===>',user.displayName)
     
   });
 }
