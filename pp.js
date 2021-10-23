@@ -11,7 +11,7 @@ const abc = () =>{
   })
   .catch((error) => {
     
-    console.log('error===>',error.message)
+   console.log('user===>',user.displayName)
     
   });
 }
