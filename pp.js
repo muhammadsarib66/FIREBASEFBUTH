@@ -15,3 +15,15 @@ const abc = () =>{
     
   });
 }
+function google(){
+var provider1 = new firebase.auth.GoogleAuthProvider();
+
+firebase.auth()
+  .signInWithPopup(provider1)
+  .then((result) => {
+    var userr = result.userr
+    console.log('result===>',userr.email)
+  }).catch((error) => {
+    console.log(error.message)
+  });
+}
